@@ -14,6 +14,8 @@ namespace EmpolyeeMgmt1
     {
         Functions Con;
 
+        public object GenCb { get; private set; }
+
         public Employee()
         {
             InitializeComponent();
@@ -70,7 +72,36 @@ namespace EmpolyeeMgmt1
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (EmpNameTb.Text == "" || GenderCb.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySalTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data!!!");
+                }
+                else
+                {
+                    string Name = EmpNameTb.Text; 
+                    string Gender = GenderCb.SelectedItem.ToString();
+                    string Dep = GenderCb.SelectedValue.ToString();
+                    string DOB =DOBTb.Value.ToString();
+                    string JDate = JDateTb.Value.ToString();
+                    int Salary  = Convert.ToInt32(DailySalTb.Text);
 
+                    string Query = "insert into Employee values('{0}','{1}','{2}','{3}','{4}','{5}')";
+                    Query = string.Format(Query,Name,Gender,Dep,DOB,JDate,Salary);
+                    Con.SetData(Query);
+                    ShowEmp();
+                    MessageBox.Show("Employee Added!!!");
+                    EmpNameTb.Text = "";
+                    DailySalTb.Text = "";
+                    GenderCb.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
     }
 }
