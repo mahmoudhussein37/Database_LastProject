@@ -48,9 +48,21 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -81,7 +93,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(534, 111);
+            this.label2.Location = new System.Drawing.Point(737, 210);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(220, 29);
             this.label2.TabIndex = 2;
@@ -103,7 +115,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(409, 242);
+            this.dataGridView1.Location = new System.Drawing.Point(408, 272);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(781, 573);
@@ -183,7 +195,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(35, 525);
+            this.label5.Location = new System.Drawing.Point(24, 525);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(130, 29);
             this.label5.TabIndex = 13;
@@ -194,11 +206,12 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Teal;
-            this.label8.Location = new System.Drawing.Point(35, 631);
+            this.label8.Location = new System.Drawing.Point(24, 627);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(103, 29);
             this.label8.TabIndex = 15;
             this.label8.Text = "Join Date";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox5
             // 
@@ -263,12 +276,104 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(308, 26);
             this.dateTimePicker2.TabIndex = 23;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.Teal;
+            this.label9.Location = new System.Drawing.Point(1099, 117);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 29);
+            this.label9.TabIndex = 61;
+            this.label9.Text = "Logout";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(1043, 117);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(50, 39);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 60;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.Teal;
+            this.label10.Location = new System.Drawing.Point(925, 117);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 29);
+            this.label10.TabIndex = 59;
+            this.label10.Text = "Salary";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(869, 117);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 58;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.Teal;
+            this.label11.Location = new System.Drawing.Point(673, 117);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(138, 29);
+            this.label11.TabIndex = 57;
+            this.label11.Text = "Departments";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(617, 117);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 56;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.Teal;
+            this.label12.Location = new System.Drawing.Point(464, 117);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(111, 29);
+            this.label12.TabIndex = 55;
+            this.label12.Text = "Employee";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(408, 117);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 39);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 54;
+            this.pictureBox2.TabStop = false;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1403, 884);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker2);
@@ -297,6 +402,10 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,5 +431,13 @@
         private ComboBox comboBox2;
         private DateTimePicker dateTimePicker1;
         private DateTimePicker dateTimePicker2;
+        private Label label9;
+        private PictureBox pictureBox5;
+        private Label label10;
+        private PictureBox pictureBox4;
+        private Label label11;
+        private PictureBox pictureBox3;
+        private Label label12;
+        private PictureBox pictureBox2;
     }
 }

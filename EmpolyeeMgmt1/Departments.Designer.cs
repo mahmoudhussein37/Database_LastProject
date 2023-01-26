@@ -171,7 +171,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(382, 116);
+            this.pictureBox2.Location = new System.Drawing.Point(421, 120);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -183,7 +183,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(438, 116);
+            this.label5.Location = new System.Drawing.Point(477, 120);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 29);
             this.label5.TabIndex = 47;
@@ -195,7 +195,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Teal;
-            this.label6.Location = new System.Drawing.Point(647, 116);
+            this.label6.Location = new System.Drawing.Point(686, 120);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(138, 29);
             this.label6.TabIndex = 49;
@@ -204,7 +204,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(591, 116);
+            this.pictureBox3.Location = new System.Drawing.Point(630, 120);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 39);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -216,7 +216,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(899, 116);
+            this.label7.Location = new System.Drawing.Point(938, 120);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 29);
             this.label7.TabIndex = 51;
@@ -225,7 +225,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(843, 116);
+            this.pictureBox4.Location = new System.Drawing.Point(882, 120);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 39);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -237,7 +237,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Teal;
-            this.label8.Location = new System.Drawing.Point(1073, 116);
+            this.label8.Location = new System.Drawing.Point(1112, 120);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 29);
             this.label8.TabIndex = 53;
@@ -246,7 +246,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1017, 116);
+            this.pictureBox5.Location = new System.Drawing.Point(1056, 120);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(50, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -258,7 +258,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1403, 884);
+            this.ClientSize = new System.Drawing.Size(1403, 845);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label7);
