@@ -16,5 +16,20 @@ namespace EmpolyeeMgmt1
         {
             InitializeComponent();
         }
+
+        private void Departments_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
