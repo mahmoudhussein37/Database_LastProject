@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salaries));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,7 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,6 +54,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -68,7 +72,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(191, 827);
+            this.button2.Location = new System.Drawing.Point(191, 821);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 51);
             this.button2.TabIndex = 43;
@@ -81,27 +85,12 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(24, 827);
+            this.button1.Location = new System.Drawing.Point(24, 821);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 51);
             this.button1.TabIndex = 42;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("MS Outlook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.Teal;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Teal;
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.Teal;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Teal;
-            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.Teal;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(24, 576);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(308, 26);
-            this.dateTimePicker1.TabIndex = 40;
             // 
             // dataGridView1
             // 
@@ -109,6 +98,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(396, 236);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(781, 573);
             this.dataGridView1.TabIndex = 39;
@@ -223,21 +213,6 @@
             this.comboBox3.Size = new System.Drawing.Size(308, 37);
             this.comboBox3.TabIndex = 44;
             // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.CalendarFont = new System.Drawing.Font("MS Outlook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker3.CalendarForeColor = System.Drawing.Color.Teal;
-            this.dateTimePicker3.CalendarMonthBackground = System.Drawing.Color.Teal;
-            this.dateTimePicker3.CalendarTitleBackColor = System.Drawing.Color.Teal;
-            this.dateTimePicker3.CalendarTitleForeColor = System.Drawing.Color.Teal;
-            this.dateTimePicker3.CalendarTrailingForeColor = System.Drawing.Color.Teal;
-            this.dateTimePicker3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(24, 484);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(308, 26);
-            this.dateTimePicker3.TabIndex = 45;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -322,12 +297,46 @@
             this.pictureBox2.TabIndex = 54;
             this.pictureBox2.TabStop = false;
             // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.CustomizableEdges = customizableEdges1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.Teal;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(24, 575);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(308, 36);
+            this.guna2DateTimePicker1.TabIndex = 63;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 26, 15, 26, 0, 497);
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.CustomizableEdges = customizableEdges3;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.Teal;
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(24, 473);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(308, 36);
+            this.guna2DateTimePicker2.TabIndex = 64;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 26, 15, 26, 0, 497);
+            // 
             // Salaries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1403, 845);
+            this.Controls.Add(this.guna2DateTimePicker2);
+            this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label7);
@@ -336,11 +345,9 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
@@ -373,7 +380,6 @@
 
         private Button button2;
         private Button button1;
-        private DateTimePicker dateTimePicker1;
         private DataGridView dataGridView1;
         private ComboBox comboBox1;
         private PictureBox pictureBox1;
@@ -385,7 +391,6 @@
         private Label label3;
         private Panel panel2;
         private ComboBox comboBox3;
-        private DateTimePicker dateTimePicker3;
         private Label label8;
         private PictureBox pictureBox5;
         private Label label7;
@@ -394,5 +399,7 @@
         private PictureBox pictureBox3;
         private Label label10;
         private PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
     }
 }
