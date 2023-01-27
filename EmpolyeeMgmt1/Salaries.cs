@@ -72,6 +72,15 @@ namespace EmpolyeeMgmt1
                 {
                     Period = PeriodTb.Value.Date.Month.ToString() + "-" + PeriodTb.Value.Date.Year.ToString();
                     int Amount = DSal * Convert.ToInt32(DaysTb.Text);
+                    int Days = Convert.ToInt32(DaysTb.Text);  
+                    
+                    string Query = "insert into SalaryTB1 values('{0}','{1}','{2}','{3}','{4}','{5}')";
+                    Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary);
+                    Con.SetData(Query);
+                    ShowSalaries();
+                    MessageBox.Show("Salary Paid!!!");
+                    DaysTb.Text = "";
+                  
                 }
 
             }
