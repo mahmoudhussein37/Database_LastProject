@@ -65,8 +65,14 @@ namespace EmpolyeeMgmt1
             try
             {
                 if(EmpCb.SelectedIndex == -1 || DaysTb.Text == "" || PeriodTb.Text == "" )
-                Period = PeriodTb.Value.Date.Month.ToString() + "-" + PeriodTb.Value.Date.Year.ToString();
-                int Amount = DSal * Convert.ToInt32(DaysTb.Text);
+                {
+                    MessageBox.Show("Missing Data!!!");
+                }
+                else
+                {
+                    Period = PeriodTb.Value.Date.Month.ToString() + "-" + PeriodTb.Value.Date.Year.ToString();
+                    int Amount = DSal * Convert.ToInt32(DaysTb.Text);
+                }
 
             }
             catch (Exception Ex)
