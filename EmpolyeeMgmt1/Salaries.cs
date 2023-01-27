@@ -42,7 +42,7 @@ namespace EmpolyeeMgmt1
         int DSal = 0;
         private void GetSalary()
         {
-            string Query = "Select EmpSal from Employee where EmpId = {0}";
+            string Query = "Select EmpSal from Employee where EmpName = {0}";
             Query = string.Format(Query, EmpCb.SelectedValue.ToString());
             DSal = Convert.ToInt32(Con.GetData(Query).Columns["EmpSal"].ToString());
             MessageBox.Show("" + DSal);
@@ -59,6 +59,11 @@ namespace EmpolyeeMgmt1
         private void AddBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void EmpCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetSalary();
         }
     }
 }
