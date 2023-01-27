@@ -18,7 +18,7 @@ namespace EmpolyeeMgmt1
             InitializeComponent();
             Con = new Functions();
             ShowSalaries();
-            GetEmployee;
+            GetEmployee();
         }
         private void ShowSalaries()
         {
@@ -31,6 +31,13 @@ namespace EmpolyeeMgmt1
             {
                 throw;
             }
+        }
+        private void GetEmployee()
+        {
+            string Query = "Select * from Employee";
+            EmpCb.DisplayMember = Con.GetData(Query).Columns["EmpName"].ToString();
+            EmpCb.ValueMember = Con.GetData(Query).Columns["EmpId"].ToString();
+            EmpCb.DataSource = Con.GetData(Query);
         }
 
 
