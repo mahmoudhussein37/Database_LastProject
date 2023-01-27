@@ -74,8 +74,8 @@ namespace EmpolyeeMgmt1
                     int Amount = DSal * Convert.ToInt32(DaysTb.Text);
                     int Days = Convert.ToInt32(DaysTb.Text);  
                     
-                    string Query = "insert into SalaryTB1 values('{0}','{1}','{2}','{3}','{4}','{5}')";
-                    Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary);
+                    string Query = "insert into SalaryTB1 values({0},{1},{2},{3},{4},{5})";
+                    Query = string.Format(Query, EmpCb.SelectedValue.ToString(), Days,Period, Amount, DateTime.Today.Date);
                     Con.SetData(Query);
                     ShowSalaries();
                     MessageBox.Show("Salary Paid!!!");
