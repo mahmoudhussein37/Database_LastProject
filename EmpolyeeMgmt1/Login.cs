@@ -34,7 +34,28 @@ namespace EmpolyeeMgmt1
 
         private void label4_Click(object sender, EventArgs e)
         {
+            UNameTb.Text = "";
+            PasswordTb.Text = "";
+        }
 
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            if(UNameTb.Text == "" || PasswordTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!!");
+            }
+            else if(UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
+            {
+                Employee Obj = new Employee();
+                Obj.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong UserName Or Password ");
+                UNameTb.Text = "";
+                PasswordTb.Text = "";
+            }
         }
     }
 }

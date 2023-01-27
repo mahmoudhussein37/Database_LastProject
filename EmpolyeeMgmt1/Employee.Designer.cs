@@ -90,7 +90,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(478, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 20);
+            this.label1.Size = new System.Drawing.Size(430, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee Management System Version 1.0";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -103,7 +103,7 @@
             this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(737, 210);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 29);
+            this.label2.Size = new System.Drawing.Size(255, 36);
             this.label2.TabIndex = 2;
             this.label2.Text = "Manage Employees";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -153,7 +153,7 @@
             this.EmpNameTb.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EmpNameTb.Location = new System.Drawing.Point(24, 272);
             this.EmpNameTb.Name = "EmpNameTb";
-            this.EmpNameTb.Size = new System.Drawing.Size(308, 37);
+            this.EmpNameTb.Size = new System.Drawing.Size(308, 44);
             this.EmpNameTb.TabIndex = 6;
             // 
             // label3
@@ -163,7 +163,7 @@
             this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(24, 230);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 29);
+            this.label3.Size = new System.Drawing.Size(203, 36);
             this.label3.TabIndex = 7;
             this.label3.Text = "Employee Name";
             // 
@@ -174,7 +174,7 @@
             this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(24, 329);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(187, 29);
+            this.label4.Size = new System.Drawing.Size(219, 36);
             this.label4.TabIndex = 9;
             this.label4.Text = "Employee Gender";
             // 
@@ -185,7 +185,7 @@
             this.label6.ForeColor = System.Drawing.Color.Teal;
             this.label6.Location = new System.Drawing.Point(24, 425);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(229, 29);
+            this.label6.Size = new System.Drawing.Size(268, 36);
             this.label6.TabIndex = 11;
             this.label6.Text = "Employee Department";
             // 
@@ -196,7 +196,7 @@
             this.label5.ForeColor = System.Drawing.Color.Teal;
             this.label5.Location = new System.Drawing.Point(24, 525);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 29);
+            this.label5.Size = new System.Drawing.Size(153, 36);
             this.label5.TabIndex = 13;
             this.label5.Text = "Date of Birth";
             // 
@@ -207,7 +207,7 @@
             this.label8.ForeColor = System.Drawing.Color.Teal;
             this.label8.Location = new System.Drawing.Point(24, 627);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 29);
+            this.label8.Size = new System.Drawing.Size(121, 36);
             this.label8.TabIndex = 15;
             this.label8.Text = "Join Date";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -217,7 +217,7 @@
             this.DailySalTb.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DailySalTb.Location = new System.Drawing.Point(24, 766);
             this.DailySalTb.Name = "DailySalTb";
-            this.DailySalTb.Size = new System.Drawing.Size(308, 37);
+            this.DailySalTb.Size = new System.Drawing.Size(308, 44);
             this.DailySalTb.TabIndex = 16;
             // 
             // label7
@@ -227,7 +227,7 @@
             this.label7.ForeColor = System.Drawing.Color.Teal;
             this.label7.Location = new System.Drawing.Point(24, 724);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(230, 29);
+            this.label7.Size = new System.Drawing.Size(270, 36);
             this.label7.TabIndex = 17;
             this.label7.Text = "Employee Daily Salary";
             // 
@@ -239,7 +239,7 @@
             "Female"});
             this.GenderCb.Location = new System.Drawing.Point(24, 371);
             this.GenderCb.Name = "GenderCb";
-            this.GenderCb.Size = new System.Drawing.Size(308, 37);
+            this.GenderCb.Size = new System.Drawing.Size(308, 44);
             this.GenderCb.TabIndex = 19;
             // 
             // DepCb
@@ -247,7 +247,7 @@
             this.DepCb.FormattingEnabled = true;
             this.DepCb.Location = new System.Drawing.Point(24, 474);
             this.DepCb.Name = "DepCb";
-            this.DepCb.Size = new System.Drawing.Size(308, 37);
+            this.DepCb.Size = new System.Drawing.Size(308, 44);
             this.DepCb.TabIndex = 20;
             // 
             // label9
@@ -257,9 +257,10 @@
             this.label9.ForeColor = System.Drawing.Color.Teal;
             this.label9.Location = new System.Drawing.Point(1099, 117);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 29);
+            this.label9.Size = new System.Drawing.Size(92, 36);
             this.label9.TabIndex = 61;
             this.label9.Text = "Logout";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // pictureBox5
             // 
@@ -278,7 +279,7 @@
             this.label10.ForeColor = System.Drawing.Color.Teal;
             this.label10.Location = new System.Drawing.Point(925, 117);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 29);
+            this.label10.Size = new System.Drawing.Size(88, 36);
             this.label10.TabIndex = 59;
             this.label10.Text = "Salary";
             // 
@@ -299,7 +300,7 @@
             this.label11.ForeColor = System.Drawing.Color.Teal;
             this.label11.Location = new System.Drawing.Point(673, 117);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(138, 29);
+            this.label11.Size = new System.Drawing.Size(162, 36);
             this.label11.TabIndex = 57;
             this.label11.Text = "Departments";
             // 
@@ -320,7 +321,7 @@
             this.label12.ForeColor = System.Drawing.Color.Teal;
             this.label12.Location = new System.Drawing.Point(464, 117);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 29);
+            this.label12.Size = new System.Drawing.Size(129, 36);
             this.label12.TabIndex = 55;
             this.label12.Text = "Employee";
             // 
@@ -392,6 +393,7 @@
             this.EmpList.Location = new System.Drawing.Point(408, 272);
             this.EmpList.Name = "EmpList";
             this.EmpList.RowHeadersVisible = false;
+            this.EmpList.RowHeadersWidth = 51;
             this.EmpList.RowTemplate.Height = 25;
             this.EmpList.Size = new System.Drawing.Size(770, 531);
             this.EmpList.TabIndex = 64;
@@ -435,7 +437,7 @@
             // 
             // Employee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1403, 884);
