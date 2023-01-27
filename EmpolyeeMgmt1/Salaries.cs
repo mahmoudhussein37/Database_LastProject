@@ -39,9 +39,22 @@ namespace EmpolyeeMgmt1
             EmpCb.ValueMember = Con.GetData(Query).Columns["EmpId"].ToString();
             EmpCb.DataSource = Con.GetData(Query);
         }
+        private void GetSalary()
+        {
+            string Query = "Select EmpSal from Employee where EmpId = {0}";
+            EmpCb.DisplayMember = Con.GetData(Query).Columns["EmpName"].ToString();
+            EmpCb.ValueMember = Con.GetData(Query).Columns["EmpId"].ToString();
+            EmpCb.DataSource = Con.GetData(Query);
+        }
+
 
 
         private void SalaryList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AddBtn_Click(object sender, EventArgs e)
         {
 
         }
