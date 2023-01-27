@@ -50,6 +50,19 @@ namespace EmpolyeeMgmt1
                 DSal = Convert.ToInt32(dr["EmpSal"].ToString());
             }
            // MessageBox.Show("" + DSal);
+
+            if(DaysTb.Text == "")
+            {
+                AmountTb.Text = "Rs" + (d * DSal);
+            }else if(Convert.ToInt32(DaysTb.Text) > 31)
+            {
+
+            }
+            else
+            {
+                        d = Convert.ToInt32(DaysTb.Text);
+                        AmountTb.Text = "Rs" + (d * DSal);
+            }   
            
         }
 
@@ -59,7 +72,7 @@ namespace EmpolyeeMgmt1
         {
 
         }
-
+        int d = 
         private void AddBtn_Click(object sender, EventArgs e)
         {
             try
@@ -74,7 +87,7 @@ namespace EmpolyeeMgmt1
                     int Amount = DSal * Convert.ToInt32(DaysTb.Text);
                     int Days = Convert.ToInt32(DaysTb.Text);  
                     
-                    string Query = "insert into SalaryTB1 values({0},{1},{2},{3},{4},{5})";
+                    string Query = "insert into SalaryTB1 values({0},{1},'{2}','{3}','{4}')";
                     Query = string.Format(Query, EmpCb.SelectedValue.ToString(), Days,Period, Amount, DateTime.Today.Date);
                     Con.SetData(Query);
                     ShowSalaries();
@@ -94,6 +107,11 @@ namespace EmpolyeeMgmt1
         private void EmpCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
             GetSalary();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
