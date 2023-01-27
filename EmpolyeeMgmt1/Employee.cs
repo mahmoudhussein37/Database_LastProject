@@ -25,9 +25,17 @@ namespace EmpolyeeMgmt1
         }
         private void ShowEmp()
         {
-            string Query = "Select * from Employee";
-            EmpList.DataSource = Con.GetData(Query);
+            try
+            {
+                string Query = "Select * from Employee";
+                EmpList.DataSource = Con.GetData(Query);
+            }
+            catch (Exception Ex)
+            {
+                throw;
+            }
         }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
