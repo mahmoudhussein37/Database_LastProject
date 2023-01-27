@@ -63,6 +63,7 @@
             this.DOBTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.JDateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.EmpList = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.DeleteBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -388,7 +389,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.EmpList.DefaultCellStyle = dataGridViewCellStyle3;
             this.EmpList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.EmpList.Location = new System.Drawing.Point(408, 302);
+            this.EmpList.Location = new System.Drawing.Point(408, 272);
             this.EmpList.Name = "EmpList";
             this.EmpList.RowHeadersVisible = false;
             this.EmpList.RowTemplate.Height = 25;
@@ -417,12 +418,27 @@
             this.EmpList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.EmpList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmpList_CellContentClick);
             // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.BackColor = System.Drawing.Color.Crimson;
+            this.DeleteBtn.FlatAppearance.BorderSize = 0;
+            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteBtn.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DeleteBtn.ForeColor = System.Drawing.Color.Black;
+            this.DeleteBtn.Location = new System.Drawing.Point(727, 821);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(141, 51);
+            this.DeleteBtn.TabIndex = 65;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1403, 845);
+            this.ClientSize = new System.Drawing.Size(1403, 884);
+            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.EmpList);
             this.Controls.Add(this.JDateTb);
             this.Controls.Add(this.DOBTb);
@@ -497,5 +513,6 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker DOBTb;
         private Guna.UI2.WinForms.Guna2DateTimePicker JDateTb;
         private Guna.UI2.WinForms.Guna2DataGridView EmpList;
+        private Button DeleteBtn;
     }
 }
