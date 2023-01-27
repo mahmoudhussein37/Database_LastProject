@@ -17,9 +17,22 @@ namespace EmpolyeeMgmt1
         {
             InitializeComponent();
             Con = new Functions();
-            ShowEmp();
-            GetDepartment();
+            ShowSalaries();
+            GetEmployee;
         }
+        private void ShowSalaries()
+        {
+            try
+            {
+                string Query = "Select * from SalaryTB1";
+                SalaryList.DataSource = Con.GetData(Query);
+            }
+            catch (Exception Ex)
+            {
+                throw;
+            }
+        }
+
 
         private void SalaryList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
