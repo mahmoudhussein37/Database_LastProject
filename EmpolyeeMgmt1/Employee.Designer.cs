@@ -422,7 +422,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1403, 884);
+            this.ClientSize = new System.Drawing.Size(1403, 845);
             this.Controls.Add(this.EmpList);
             this.Controls.Add(this.JDateTb);
             this.Controls.Add(this.DOBTb);

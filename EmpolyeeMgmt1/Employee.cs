@@ -82,7 +82,7 @@ namespace EmpolyeeMgmt1
                 {
                     string Name = EmpNameTb.Text; 
                     string Gender = GenderCb.SelectedItem.ToString();
-                    string Dep = GenderCb.SelectedValue.ToString();
+                    int Dep = Convert.ToInt32(GenderCb.SelectedValue.ToString());
                     string DOB =DOBTb.Value.ToString();
                     string JDate = JDateTb.Value.ToString();
                     int Salary  = Convert.ToInt32(DailySalTb.Text);
