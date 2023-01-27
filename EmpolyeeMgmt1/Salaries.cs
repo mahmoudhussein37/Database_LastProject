@@ -56,7 +56,7 @@ namespace EmpolyeeMgmt1
                 AmountTb.Text = "Rs" + (d * DSal);
             }else if(Convert.ToInt32(DaysTb.Text) > 31)
             {
-
+                MessageBox.Show("Days Can not be greather then 31");
             }
             else
             {
