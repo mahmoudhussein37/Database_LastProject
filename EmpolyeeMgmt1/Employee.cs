@@ -90,7 +90,15 @@ namespace EmpolyeeMgmt1
 
         private void EmpList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            EmpNameTb.Text = EmpList.SelectedRows[0].Cells[1].Value.ToString();
+            if (EmpNameTb.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(EmpList.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
         private void GetDepartment()
         {
