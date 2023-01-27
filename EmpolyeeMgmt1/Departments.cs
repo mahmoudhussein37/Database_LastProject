@@ -133,5 +133,12 @@ namespace EmpolyeeMgmt1
             obj.Show();
             this.Hide();
         }
+
+        private void SalaryLbl_Click(object sender, EventArgs e)
+        {
+            Salaries Obj = new Salaries();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }
