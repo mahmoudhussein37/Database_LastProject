@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Departments));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@
             this.label9.ForeColor = System.Drawing.Color.Teal;
             this.label9.Location = new System.Drawing.Point(1163, 112);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 29);
+            this.label9.Size = new System.Drawing.Size(92, 36);
             this.label9.TabIndex = 85;
             this.label9.Text = "Logout";
             // 
@@ -88,7 +88,7 @@
             this.label10.ForeColor = System.Drawing.Color.Teal;
             this.label10.Location = new System.Drawing.Point(989, 112);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 29);
+            this.label10.Size = new System.Drawing.Size(88, 36);
             this.label10.TabIndex = 83;
             this.label10.Text = "Salary";
             // 
@@ -109,7 +109,7 @@
             this.label11.ForeColor = System.Drawing.Color.Teal;
             this.label11.Location = new System.Drawing.Point(737, 112);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(138, 29);
+            this.label11.Size = new System.Drawing.Size(162, 36);
             this.label11.TabIndex = 81;
             this.label11.Text = "Departments";
             // 
@@ -130,7 +130,7 @@
             this.EmpLbl.ForeColor = System.Drawing.Color.Teal;
             this.EmpLbl.Location = new System.Drawing.Point(528, 112);
             this.EmpLbl.Name = "EmpLbl";
-            this.EmpLbl.Size = new System.Drawing.Size(111, 29);
+            this.EmpLbl.Size = new System.Drawing.Size(129, 36);
             this.EmpLbl.TabIndex = 79;
             this.EmpLbl.Text = "Employee";
             this.EmpLbl.Click += new System.EventHandler(this.EmpLbl_Click);
@@ -177,7 +177,7 @@
             this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(39, 322);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 29);
+            this.label3.Size = new System.Drawing.Size(223, 36);
             this.label3.TabIndex = 65;
             this.label3.Text = "Department Name";
             // 
@@ -186,7 +186,7 @@
             this.DepNameTb.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DepNameTb.Location = new System.Drawing.Point(39, 365);
             this.DepNameTb.Name = "DepNameTb";
-            this.DepNameTb.Size = new System.Drawing.Size(308, 37);
+            this.DepNameTb.Size = new System.Drawing.Size(308, 44);
             this.DepNameTb.TabIndex = 64;
             // 
             // label2
@@ -196,7 +196,7 @@
             this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(649, 210);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(226, 29);
+            this.label2.Size = new System.Drawing.Size(263, 36);
             this.label2.TabIndex = 63;
             this.label2.Text = "Manage Department";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -208,7 +208,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(478, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 20);
+            this.label1.Size = new System.Drawing.Size(430, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee Management System Version 1.0";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -230,7 +230,7 @@
             this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(780, 262);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 29);
+            this.label4.Size = new System.Drawing.Size(207, 36);
             this.label4.TabIndex = 86;
             this.label4.Text = "Departments List";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -267,32 +267,33 @@
             // 
             // DepList
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.DepList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DepList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DepList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DepList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DepList.ColumnHeadersHeight = 4;
             this.DepList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DepList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DepList.DefaultCellStyle = dataGridViewCellStyle3;
             this.DepList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DepList.Location = new System.Drawing.Point(432, 312);
             this.DepList.Name = "DepList";
             this.DepList.RowHeadersVisible = false;
+            this.DepList.RowHeadersWidth = 51;
             this.DepList.RowTemplate.Height = 25;
-            this.DepList.Size = new System.Drawing.Size(749, 476);
+            this.DepList.Size = new System.Drawing.Size(823, 476);
             this.DepList.TabIndex = 89;
             this.DepList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DepList.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -319,7 +320,7 @@
             // 
             // Departments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1387, 845);
