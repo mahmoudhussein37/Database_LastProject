@@ -63,6 +63,8 @@ namespace EmpolyeeMgmt1
         private void AddBtn_Click(object sender, EventArgs e)
         {
             Period = PeriodTb.Value.Date.Month.ToString() + "-" + PeriodTb.Value.Date.Year.ToString();
+            int Amount = DSal * Convert.ToInt32(DaysTb.Text);
+
         }
 
         private void EmpCb_SelectionChangeCommitted(object sender, EventArgs e)
