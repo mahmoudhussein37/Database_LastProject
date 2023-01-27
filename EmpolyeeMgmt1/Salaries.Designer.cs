@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salaries));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -54,8 +56,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.PeriodTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SalaryList = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.SalaryTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -286,21 +289,21 @@
             this.pictureBox2.TabIndex = 54;
             this.pictureBox2.TabStop = false;
             // 
-            // guna2DateTimePicker1
+            // PeriodTb
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CustomizableEdges = customizableEdges3;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.Teal;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(24, 479);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(308, 49);
-            this.guna2DateTimePicker1.TabIndex = 63;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 26, 19, 33, 22, 980);
+            this.PeriodTb.Checked = true;
+            this.PeriodTb.CustomizableEdges = customizableEdges5;
+            this.PeriodTb.FillColor = System.Drawing.Color.Teal;
+            this.PeriodTb.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PeriodTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.PeriodTb.Location = new System.Drawing.Point(24, 479);
+            this.PeriodTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.PeriodTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.PeriodTb.Name = "PeriodTb";
+            this.PeriodTb.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.PeriodTb.Size = new System.Drawing.Size(308, 49);
+            this.PeriodTb.TabIndex = 63;
+            this.PeriodTb.Value = new System.DateTime(2023, 1, 26, 19, 33, 22, 980);
             // 
             // SalaryList
             // 
@@ -354,14 +357,31 @@
             this.SalaryList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SalaryList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // SalaryTb
+            // 
+            this.SalaryTb.Checked = true;
+            this.SalaryTb.CustomizableEdges = customizableEdges7;
+            this.SalaryTb.FillColor = System.Drawing.Color.Teal;
+            this.SalaryTb.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SalaryTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.SalaryTb.Location = new System.Drawing.Point(24, 597);
+            this.SalaryTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.SalaryTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.SalaryTb.Name = "SalaryTb";
+            this.SalaryTb.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.SalaryTb.Size = new System.Drawing.Size(308, 49);
+            this.SalaryTb.TabIndex = 91;
+            this.SalaryTb.Value = new System.DateTime(2023, 1, 26, 19, 33, 22, 980);
+            // 
             // Salaries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1403, 884);
+            this.Controls.Add(this.SalaryTb);
             this.Controls.Add(this.SalaryList);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.PeriodTb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label7);
@@ -422,7 +442,8 @@
         private PictureBox pictureBox3;
         private Label label10;
         private PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker PeriodTb;
         private Guna.UI2.WinForms.Guna2DataGridView SalaryList;
+        private Guna.UI2.WinForms.Guna2DateTimePicker SalaryTb;
     }
 }
