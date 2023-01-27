@@ -12,9 +12,18 @@ namespace EmpolyeeMgmt1
 {
     public partial class Salaries : Form
     {
+        Functions Con;
         public Salaries()
         {
             InitializeComponent();
+            Con = new Functions();
+            ShowEmp();
+            GetDepartment();
+        }
+
+        private void SalaryList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
