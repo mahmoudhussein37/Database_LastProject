@@ -91,6 +91,10 @@ namespace EmpolyeeMgmt1
         private void EmpList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             EmpNameTb.Text = EmpList.SelectedRows[0].Cells[1].Value.ToString();
+            GenderCb.Text = EmpList.SelectedRows[0].Cells[2].Value.ToString();
+            DepCb.SelectedValue = EmpList.SelectedRows[0].Cells[3].Value.ToString();
+            EmpNameTb.Text = EmpList.SelectedRows[0].Cells[4].Value.ToString();
+            EmpNameTb.Text = EmpList.SelectedRows[0].Cells[5].Value.ToString();
             if (EmpNameTb.Text == "")
             {
                 Key = 0;
