@@ -39,12 +39,14 @@ namespace EmpolyeeMgmt1
             EmpCb.ValueMember = Con.GetData(Query).Columns["EmpId"].ToString();
             EmpCb.DataSource = Con.GetData(Query);
         }
+        int DSal = 0;
         private void GetSalary()
         {
             string Query = "Select EmpSal from Employee where EmpId = {0}";
-            EmpCb.DisplayMember = Con.GetData(Query).Columns["EmpName"].ToString();
-            EmpCb.ValueMember = Con.GetData(Query).Columns["EmpId"].ToString();
-            EmpCb.DataSource = Con.GetData(Query);
+            Query = string.Format(Query, EmpCb.SelectedValue.ToString());
+            DSal = Convert.ToInt32(Con.GetData(Query).Columns["EmpSal"].ToString());
+            MessageBox.Show("" + DSal);
+            //EmpCb.DataSource = Con.GetData(Query);
         }
 
 
