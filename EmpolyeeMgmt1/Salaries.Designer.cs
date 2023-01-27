@@ -29,16 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salaries));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
-            this.DaysTb = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -58,7 +55,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PeriodTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SalaryList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.SalaryTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.AmountTb = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -95,17 +93,6 @@
             this.AddBtn.Text = "Add";
             this.AddBtn.UseVisualStyleBackColor = false;
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
-            // DaysTb
-            // 
-            this.DaysTb.FormattingEnabled = true;
-            this.DaysTb.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.DaysTb.Location = new System.Drawing.Point(24, 377);
-            this.DaysTb.Name = "DaysTb";
-            this.DaysTb.Size = new System.Drawing.Size(308, 44);
-            this.DaysTb.TabIndex = 37;
             // 
             // pictureBox1
             // 
@@ -294,7 +281,7 @@
             // PeriodTb
             // 
             this.PeriodTb.Checked = true;
-            this.PeriodTb.CustomizableEdges = customizableEdges9;
+            this.PeriodTb.CustomizableEdges = customizableEdges1;
             this.PeriodTb.FillColor = System.Drawing.Color.Teal;
             this.PeriodTb.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PeriodTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -302,33 +289,33 @@
             this.PeriodTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.PeriodTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.PeriodTb.Name = "PeriodTb";
-            this.PeriodTb.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            this.PeriodTb.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.PeriodTb.Size = new System.Drawing.Size(308, 49);
             this.PeriodTb.TabIndex = 63;
             this.PeriodTb.Value = new System.DateTime(2023, 1, 26, 19, 33, 22, 980);
             // 
             // SalaryList
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.SalaryList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SalaryList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.SalaryList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SalaryList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.SalaryList.ColumnHeadersHeight = 4;
             this.SalaryList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SalaryList.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("PT Separated Baloon", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SalaryList.DefaultCellStyle = dataGridViewCellStyle3;
             this.SalaryList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SalaryList.Location = new System.Drawing.Point(447, 282);
             this.SalaryList.Name = "SalaryList";
@@ -360,21 +347,19 @@
             this.SalaryList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.SalaryList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SalaryList_CellContentClick);
             // 
-            // SalaryTb
+            // AmountTb
             // 
-            this.SalaryTb.Checked = true;
-            this.SalaryTb.CustomizableEdges = customizableEdges11;
-            this.SalaryTb.FillColor = System.Drawing.Color.Teal;
-            this.SalaryTb.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SalaryTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.SalaryTb.Location = new System.Drawing.Point(24, 597);
-            this.SalaryTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.SalaryTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.SalaryTb.Name = "SalaryTb";
-            this.SalaryTb.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            this.SalaryTb.Size = new System.Drawing.Size(308, 49);
-            this.SalaryTb.TabIndex = 91;
-            this.SalaryTb.Value = new System.DateTime(2023, 1, 26, 19, 33, 22, 980);
+            this.AmountTb.Location = new System.Drawing.Point(24, 583);
+            this.AmountTb.Name = "AmountTb";
+            this.AmountTb.Size = new System.Drawing.Size(308, 44);
+            this.AmountTb.TabIndex = 91;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(24, 374);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(308, 44);
+            this.textBox2.TabIndex = 92;
             // 
             // Salaries
             // 
@@ -382,7 +367,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1403, 884);
-            this.Controls.Add(this.SalaryTb);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.AmountTb);
             this.Controls.Add(this.SalaryList);
             this.Controls.Add(this.PeriodTb);
             this.Controls.Add(this.label8);
@@ -396,7 +382,6 @@
             this.Controls.Add(this.EmpCb);
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.DaysTb);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -427,7 +412,6 @@
 
         private Button UpdateBtn;
         private Button AddBtn;
-        private ComboBox DaysTb;
         private PictureBox pictureBox1;
         private Label label5;
         private Label label6;
@@ -447,6 +431,7 @@
         private PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2DateTimePicker PeriodTb;
         private Guna.UI2.WinForms.Guna2DataGridView SalaryList;
-        private Guna.UI2.WinForms.Guna2DateTimePicker SalaryTb;
+        private TextBox AmountTb;
+        private TextBox textBox2;
     }
 }
