@@ -46,14 +46,43 @@ namespace EmpolyeeMgmt1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (EmpNameTb.Text == "" || GenderCb.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySalTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data!!!");
+                }
+                else
+                {
+                    string Name = EmpNameTb.Text;
+                    string Gender = GenderCb.SelectedItem.ToString();
+                    int Dep = Convert.ToInt32(GenderCb.SelectedValue.ToString());
+                    string DOB = DOBTb.Value.ToString();
+                    string JDate = JDateTb.Value.ToString();
+                    int Salary = Convert.ToInt32(DailySalTb.Text);
 
+                    string Query = "Update into Employee set EmpName = '{0}',EmpGen ='{1}',EmpDep ='{2}',EmpDOB ='{3}',EmpJDate ='{4}',EmpSal ='{5}' where EmpId = {6}";
+                    Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary, Key);
+                    Con.SetData(Query);
+                    ShowEmp();
+                    MessageBox.Show("Employee Added!!!");
+                    EmpNameTb.Text = "";
+                    DailySalTb.Text = "";
+                    GenderCb.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
 
         }
-
+        int Key = 0;
         private void Employee_Load(object sender, EventArgs e)
         {
 
@@ -102,6 +131,11 @@ namespace EmpolyeeMgmt1
             {
                 MessageBox.Show(Ex.Message);
             }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
